@@ -15,15 +15,20 @@ app.get('/news',(req,res) =>{
         res.send($('.pg-rail-tall__body', html).text())
 
         // res.send($('.l-container', html).text())
-    //   console.log($('.pg-headline', html).text());
+      console.log($('.pg-headline', html).text());
     //   console.log($('.l-container', html).text());
     })
     .catch(function(err) {
   
       console.log('can not read data',err)
-      //handle error
     });
     
+})
+
+app.get('/text',(req,res)=>{
+
+
+
 })
 
 
